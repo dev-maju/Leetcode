@@ -12,6 +12,8 @@ class Solution:
 
 
         # return sorted(s)==sorted(t)
+
+
         if Counter(s)!=Counter(t):
             return False
         else:
