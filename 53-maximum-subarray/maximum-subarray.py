@@ -11,11 +11,15 @@ class Solution:
 
         curr=0
         best=nums[0]
+        # for x in nums:
+        #     curr=x if curr < 0 else curr+x
+        #     best=best if best>curr else curr
+        # return best
+        
         for x in nums:
-            curr=x if curr < 0 else curr+x
-            best=best if best>curr else curr
+            curr=max(x,curr+x)
+            best=max(best,curr)
         return best
-            
            
             
 
